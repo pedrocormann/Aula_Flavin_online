@@ -48,8 +48,8 @@ async function asyncCall() {  // Enables async/await in JS [part 1]
     const [emitter] = await Promise.all([
       Scene.root.findFirst('emitter')
     ]);
-    Diagnostics.log("emitter found");
-    Diagnostics.log("Emitter");
+    Diagnostics.log("Joaozinho O Brabo");
+    Diagnostics.log("chama papai");
     if (emitter != null) {
       Diagnostics.log("emmiter != null");
       emitter.birthrate = 200;
@@ -60,9 +60,8 @@ async function asyncCall() {  // Enables async/await in JS [part 1]
       //emitter.sizeModifier = sizeSampler;
 
       // Create polybezier samplers for X,Y and Z values with arbitrary values for keyframes
-      const samplerX = Animation.samplers.polybezier({keyframes:[0,0.11,0,-0.01,0],knots:[0,1,2,3,4]})
-      const samplerY = Animation.samplers.polybezier({keyframes:[-0.01,0,-0.11,0,0.11],knots:[0,1,2,3,4]})
       const samplerZ = Animation.samplers.polybezier({keyframes:[-0.05,0.05,-0.05,0.05,-0.05],knots:[0,1,2,3,4]})
+      Diagnostics.log("bom dia mundo");
 
       // Use XYZ samplers to modify position of particles over time
       emitter.positionModifier = [samplerX,samplerY,samplerZ];
