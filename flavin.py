@@ -48,8 +48,10 @@ async function asyncCall() {  // Enables async/await in JS [part 1]
     const [emitter] = await Promise.all([
       Scene.root.findFirst('emitter')
     ]);
+
     Diagnostics.log("Joaozinho O Brabo");
-    Diagnostics.log("chama papai");
+    Diagnostics.log("Flavin O Brabo");
+
     if (emitter != null) {
       Diagnostics.log("emmiter != null");
       emitter.birthrate = 200;
